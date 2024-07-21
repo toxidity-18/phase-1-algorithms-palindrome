@@ -1,18 +1,16 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(str) {
+  return str === str.split('').reverse().join('');
 }
 
-/* 
-  Add your pseudocode here
-*/
 
-/*
-  Add written explanation of your solution here
-*/
+console.log(isPalindrome("madam"));     
+console.log(isPalindrome("robot"));     
+console.log(isPalindrome("racecar"));   
+console.log(isPalindrome("level"));    
+ console.log(isPalindrome("palindrome"));
 
-// You can run `node index.js` to view these console logs
 if (require.main === module) {
-  // add your own custom tests in here
+ 
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
